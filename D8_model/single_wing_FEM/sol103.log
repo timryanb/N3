@@ -1,0 +1,165 @@
+MSC Nastran V2017.1 (Intel Windows Server 2012 R2 6.2 9200) Control File: 
+----------------------------------------------------------------- 
+$ sysfield=SCR*(RAW=YES,BUFFIO=YES,wnum=16,wsize=16mb) $(c:/msc.software/msc_nastran/20171/conf/nast20171.rcf[1])
+$ sysfield=DBALL(RAW=YES,BUFFIO=YES,wnum=16,wsize=16mb) $(c:/msc.software/msc_nastran/20171/conf/nast20171.rcf[2])
+Nastran BUFFSIZE=8193 $(c:/msc.software/msc_nastran/20171/conf/nast20171.rcf[5])
+JID='V:\Wei_Zhao\PAAW\Model\xAEWing3\PAAW_N+3_D8_v2\Design\design2018090929\sol103.bdf'
+OUT='./sol103'
+MEM=35598336      $ WORDS
+MACH='Intel'
+OPER='Windows Server 2012 R2'
+OSV='6.2 9200'
+MODEL='P5-4/2223 (gl-newton)'
+NPROC='12'
+CONFIG=15
+NPROC=12
+symbol=DELDIR='c:/msc.software/msc_nastran/20171/msc20171/nast/del' $(program default)
+symbol=DEMODIR='c:/msc.software/msc_nastran/20171/msc20171/nast/demo' $(program default)
+symbol=LM_NO_SNMP=1 $(c:/msc.software/msc_nastran/20171/conf/nast20171.rcf[8])
+symbol=SSSALTERDIR='c:/msc.software/msc_nastran/20171/msc20171/nast/sssalter' $(program default)
+symbol=TPLDIR='c:/msc.software/msc_nastran/20171/msc20171/nast/tpl' $(program default)
+SDIR='c:/scratch/sol103.T9664_31'
+DBS='./sol103'
+SCR='no'
+SMEM=100
+BPOOL=150
+DMPMEM=0
+NEWDEL='c:/msc.software/msc_nastran/20171/msc20171/win64i8/sss'
+DEL='MSCDEF'
+DML=MSCDEF
+SDL=MSCDEF
+AUTH='1701@trinidad.its.vt.edu'
+AUTHQUE=20
+MSGCAT='c:/msc.software/msc_nastran/20171/msc20171/win64i8/analysis.msg'
+MSGDEST='f06'
+NEWS='c:/msc.software/msc_nastran/20171/msc20171/nast/news.txt'
+----------------------------------------------------------------- 
+MSC_ISHELLPATH=C:\MSC.Software\MSC_Nastran\20171\msc20171\actran\win64\Actran_17.1.b.97631\bin;C:\MSC.Software\MSC_Nastran\20171\msc20171\nast; 
+MSC_JIDPATH= 
+PATH=c:\msc.software\msc_nastran\20171\msc20171\win64i8;c:\msc.software\msc_nastran\20171\msc20171\win64i8\nCode\bin;c:\msc.software\msc_nastran\20171\msc20171\win64i8\nvidia;c:\msc.software\msc_nastran\20171\msc20171\win64i8\lib;c:\msc.software\msc_nastran\20171\msc20171\win64i8;C:\Program Files\MATLAB\R2017B\bin\win64;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\mpirt;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\ia32_win\compiler;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Tecplot\Tecplot Chorus 2017 R1\bin;C:\Program Files\Tecplot\Tecplot 360 EX 2017 R1\bin;C:\MSC.Software\Patran_x64\20170\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\UCRT\;C:\Program Files\Intel\UCRT\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\MATLAB\R2018A\runtime\win64;C:\Program Files\MATLAB\R2018A\bin;C:\Program Files\MATLAB\R2017b\runtime\win64;C:\Program Files\MATLAB\R2017b\bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\Wolfram Research\WolframScript\;C:\Program Files\Orca3D (64-bit);C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ 
+SCA_SERVICE_CATALOG=c:\msc.software\msc_nastran\20171\msc20171\res\SCAServiceCatalog.xml 
+SCA_RESOURCE_DIR=c:\msc.software\msc_nastran\20171\msc20171\res 
+Cmd Line:    C:\MSC.Software\MSC_Nastran\20171\msc20171\win64i8\nastran.exe sol103.bdf memory=estimate 
+Current Dir: V:\Wei_Zhao\PAAW\Model\xAEWing3\PAAW_N+3_D8_v2\Design\design2018090929 
+Time Cmd:    c:\msc.software\msc_nastran\20171\msc20171\win64i8\msctime 
+Executable:  c:\msc.software\msc_nastran\20171\msc20171\win64i8\analysis.exe 
+Arch= Kywd:  [Not specified]  
+MSC_MSG:     stderr  
+FPE:         yes  
+----------------------------------------------------------------- 
+Current resource limits:
+ Physical memory:                    32690 MB
+ Physical memory available:          24667 MB
+ Paging file size:                   37554 MB
+ Paging file size available:         29453 MB
+ Virtual memory:                 134217727 MB
+ Virtual memory available:       134217672 MB
+----------------------------------------------------------------- 
+System configuration:
+ Hostname:         gl-newton.aoe.vt.edu
+ Architecture:     win64i8
+ Platform:         Intel Windows Server 2012 R2 6.2 9200 (Windows Compute Cluster)
+ Model:            P5-4/2223
+ Clock freq.:      2225 MHz
+ Number of CPUs:   12
+ Executable:       standard
+ Raw model ID:     15
+ Config number:    15
+ Physical memory:  32690 MB
+ Virtual memory:   37554 MB
+ Numeric format:   64-bit little-endian IEEE.
+ Bytes per word:   8
+ Disk block size:  512 bytes (64 words)
+ Remote shell cmd: "c:/msc.software/msc_nastran/20171/msc20171/win64i8/mscrmtcmd.exe" (Windows non-CCS nodes, UNIX)
+                   <ccs_cmd> (Windows CCS nodes)
+----------------------------------------------------------------- 
+MSC Nastran started  Sun Sep  9 22:34:32 EDT 2018 
+ 22:34:34  Beginning Analysis
+SCA Kernel 18.3.439984 successfully initialized
+BLAS/LAPACK .dll "c:\msc.software\msc_nastran\20171\msc20171\win64i8\libimalloc.dll" has been loaded.
+BLAS/LAPACK .dll "c:\msc.software\msc_nastran\20171\msc20171\win64i8\mkl_core.dll" has been loaded.
+BLAS/LAPACK .dll "c:\msc.software\msc_nastran\20171\msc20171\win64i8\mkl_intel_thread.dll" has been loaded.
+BLAS/LAPACK .dll "c:\msc.software\msc_nastran\20171\msc20171\win64i8\mkl_rt.dll" has been loaded.
+BLAS/LAPACK .dll "c:\msc.software\msc_nastran\20171\msc20171\win64i8\MSCblas.dll" has been loaded.
+
+ 22:34:35  MSC Authorization Information - System Attributes (1004, 0)
+ 22:34:35  -----------------------------------------------------------
+  Date:          Sun Sep  9 22:34:35 2018
+  MSC Id:        1866da14532a (ethernet) (Intel)
+  Hostname:      gl-newton (user weizhao, display WACO)
+  License files: 1701@trinidad.its.vt.edu
+  CEID:          5DBD1901-359GB1C6
+  User:          weizhao
+  Display:       WACO
+  LAPI Version:  LAPI 10.1.8-3298 (FLEXlm 11.9.0.0)
+
+  * * * * * * * * * * * * * * * * * * * *
+  * * * * * * * * * * * * * * * * * * * *
+  * *                                 * *
+  * *   MSC Customer Entitlement ID   * *
+  * *        5DBD1901-359GB1C6        * *
+  * *                                 * *
+  * * * * * * * * * * * * * * * * * * * *
+  * * * * * * * * * * * * * * * * * * * *
+
+ 22:34:35  MSC Authorization Information - Checkout Successful (1016, 0)
+ 22:34:35  -------------------------------------------------------------
+ 22:34:35  Acquired 1 license for MSC Nastran from license server on host trinidad.its.vt.edu
+
+
+Beginning bulk data processing using the IFPStar component.
+For more information on IFPStar, please see KB article KB8019200
+on our support pages, at http://simcompanion.mscsoftware.com.
+
+ 22:34:35  Reading INCLUDE file "v:\Wei_Zhao\PAAW\Model\xAEWing3\PAAW_N+3_D8_v2\Design\design2018090929\D8_wing_topskin_elem.dat"
+ 22:34:35  1089 records read from INCLUDE file "v:\Wei_Zhao\PAAW\Model\xAEWing3\PAAW_N+3_D8_v2\Design\design2018090929\D8_wing_topskin_elem.dat"
+ 22:34:35  Reading INCLUDE file "v:\Wei_Zhao\PAAW\Model\xAEWing3\PAAW_N+3_D8_v2\Design\design2018090929\D8_wing_botskin_elem.dat"
+ 22:34:35  1089 records read from INCLUDE file "v:\Wei_Zhao\PAAW\Model\xAEWing3\PAAW_N+3_D8_v2\Design\design2018090929\D8_wing_botskin_elem.dat"
+ 22:34:35  Reading INCLUDE file "v:\Wei_Zhao\PAAW\Model\xAEWing3\PAAW_N+3_D8_v2\Design\design2018090929\D8_wing_sparibs_elem.dat"
+ 22:34:35  916 records read from INCLUDE file "v:\Wei_Zhao\PAAW\Model\xAEWing3\PAAW_N+3_D8_v2\Design\design2018090929\D8_wing_sparibs_elem.dat"
+ 22:34:35  Reading INCLUDE file "v:\Wei_Zhao\PAAW\Model\xAEWing3\PAAW_N+3_D8_v2\Design\design2018090929\D8_wing_sparibs_nodes.dat"
+ 22:34:35  1309 records read from INCLUDE file "v:\Wei_Zhao\PAAW\Model\xAEWing3\PAAW_N+3_D8_v2\Design\design2018090929\D8_wing_sparibs_nodes.dat"
+ 22:34:35  Reading INCLUDE file "v:\Wei_Zhao\PAAW\Model\xAEWing3\PAAW_N+3_D8_v2\Design\design2018090929\D8_wing_sparibs_BC.dat"
+ 22:34:35  5 records read from INCLUDE file "v:\Wei_Zhao\PAAW\Model\xAEWing3\PAAW_N+3_D8_v2\Design\design2018090929\D8_wing_sparibs_BC.dat"
+ 22:34:35  62 records read from JID file "V:\Wei_Zhao\PAAW\Model\xAEWing3\PAAW_N+3_D8_v2\Design\design2018090929\sol103.bdf"
+ 22:34:35  A total of 4470 records were read from 6 files.
+
+Processing of bulk data entries is complete.
+
+ 22:34:36  Analysis started.
+ 22:34:36  Geometry access/verification to CAD part initiated (if needed).
+ 22:34:36  Geometry access/verification to CAD part successfully completed (if needed).
+ 22:34:36  Finite element model generation started.
+ 22:34:36  Finite element model generated 7854 degrees of freedom.
+ 22:34:36  Finite element model generation successfully completed.
+ 22:34:36  Application of Loads and Boundary Conditions to the finite element model started.
+ 22:34:36  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 22:34:37  Solution of the system equations for normal modes started.
+ 22:34:37  Solution of the system equations for normal modes successfully completed.
+ 22:34:40  Normal modes analysis completed.
+ 22:34:40  25 records read from JID file "V:\Wei_Zhao\PAAW\Model\xAEWing3\PAAW_N+3_D8_v2\Design\design2018090929\sol103.bdf"
+ 22:34:40  NSEXIT: EXIT(0)
+ 22:34:40  Analysis complete  0
+Real:        5.520 seconds ( 0:00:05.520)
+User:        2.875 seconds ( 0:00:02.875)
+Sys:         2.109 seconds ( 0:00:02.109)
+ ==================================================
+ OS:              6.2
+ OEM ID:         9
+ Number of processors:         12
+ Page size:         4096
+ Processor type:         8664
+ Minimum application address:         10000
+ Maximum application address:         fffeffff
+ Active processor mask:         4095
+ Nsocket:         1
+ Ncore:           12  ( 1 X 12 )
+ HyperThreading:  On
+ Ram:          32690 Mb
+ ==================================================
+ Time Summary                 CPU       Wall   ( Time in Seconds )
+ =====================================================
+ Detailed performance information can be found in the 
+ "MSC Nastran High Performance Computing User's Guide"
+ =====================================================
+MSC Nastran finished Sun Sep  9 22:34:40 EDT 2018 

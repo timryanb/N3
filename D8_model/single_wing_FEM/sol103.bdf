@@ -1,0 +1,62 @@
+$ FEM v0.1 for xAEWing3: Composite wing with Sparibs + X-56A Centerbody
+$ Virginia Tech, Feb-10-2017
+$
+$ NASTRAN Q4TAPER=0.7,T3SKEW=3.0
+INIT MASTER(S)
+$
+SOL 103
+TIME 4000
+DIAG 8
+$
+
+TITLE = xAEWing3 FEM v0.1
+SUBTITLE = default
+LABEL = default
+ECHO=SORT
+$ECHO=BOTH,PUNCH,FILE
+DISP(PUNCH)=ALL
+SPC = 23
+
+METHOD=10
+$ Free-free
+$ SUPORT1 = 250 
+$ Givens Method
+$METHOD=113
+BEGIN BULK
+$_____________   A N A L Y S I S   P A R A M E T E R S   _______________$
+$
+$
+$ GROUND POINT FOR WEIGHT GENERATION
+PARAM     GRDPNT       0
+$ PRE_PROPVERT WEIGHT TO MASS (1/386)  
+PARAM     WTMASS .002591
+$ PRE_PROPVERT FROM IN/SEC TO KNOTS
+PARAM       VREF  20.254
+$ DISABLE AUTO RESEQUENCING
+
+PARAM    POST         0
+$
+$_____   E I G E N V A L U E   E X T R A C T I O N   D A T A   _________$
+$
+$.......2.......3.......4.......5.......6.......7.......8.......9.......0
+$EIGRL   10      0.              30
+EIGRL   10                      50      0                       MASS
+$ Givens method (30 Modes)
+EIGR     113    GIV                             30
+         MASS
+$
+PSHELL  100      27      0.25   27              27
+MAT1    27      1.015e6         .3      0.098
+$.......2.......3.......4.......5.......6.......7.......8.......9.......0
+INCLUDE 'D8_wing_topskin_elem.dat'
+INCLUDE 'D8_wing_botskin_elem.dat'
+INCLUDE 'D8_wing_sparibs_elem.dat'
+
+INCLUDE 'D8_wing_sparibs_nodes.dat'
+
+INCLUDE 'D8_wing_sparibs_BC.dat'
+
+
+
+$
+ENDDATA
